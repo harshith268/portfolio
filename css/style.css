@@ -1,0 +1,182 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+:root {
+  --primary-color: #f8f9fa;
+  --secondary-color: #e9ecef;
+  --text-color: #212529;
+  --accent-color: #0d6efd;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  padding-top: 76px;
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.hero-section {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+}
+
+.profile-image {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-image img {
+  width: 500px;
+  height: 500px;
+  background-color: #DADADA;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.about-section {
+  margin-top: 1rem;
+}
+
+.col-md-4, .col-lg-2 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 2.5rem; /* Adjust the value for horizontal spacing */
+}
+
+
+.quick-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2.5rem 0;
+  
+}
+
+.quick-link-item {
+  text-decoration: none;
+  color: black;
+  display: block;
+
+  
+}
+.quick-links .row {
+  justify-content: flex-start !important; /* Align items to the start (left) */
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.circle:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: white !important;
+  transition-delay: 10ms !important;
+}
+
+.circle h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.timeline .card {
+  border-left: 4px solid var(--accent-color);
+}
+
+footer {
+  
+  margin-top: auto;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Center the items inside the container */
+  text-align: center;      /* Make sure text inside is centered */
+}
+footer .d-flex {
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;     /* Align icons vertically */
+}
+
+footer a {
+  display: inline-flex; /* Ensure icons behave like inline-flex items */
+  justify-content: center;
+  align-items: center;
+}
+
+footer a:hover {
+  color: var(--accent-color) !important;
+}
+
+@media (max-width: 991px) {
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .circle h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circle h3 {
+    font-size: 0.9rem;
+  }
+}
